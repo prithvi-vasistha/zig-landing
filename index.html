@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="theme-color" content="#0A0B0A" />
+    <meta name="color-scheme" content="dark" />
+
+    <title>ZiG — On-device notification filtering for Android</title>
+    <meta
+      name="description"
+      content="ZiG intercepts and filters your Android notifications entirely on your phone — deterministic rules first, a small on-device model only when needed. No cloud, no tracking, no internet permission."
+    />
+    <link rel="canonical" href="https://prithvi-vasistha.github.io/zen-i-guess/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ZiG — Zen i Guess" />
+    <meta property="og:title" content="ZiG — On-device notification filtering for Android" />
+    <meta
+      property="og:description"
+      content="Deterministic rules and a small on-device model keep the notifications that matter. No cloud, no tracking, no internet permission — nothing leaves your phone."
+    />
+    <meta property="og:image" content="./screens/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZiG — On-device notification filtering for Android" />
+    <meta
+      name="twitter:description"
+      content="Keep the notifications that matter. Entirely on-device — no cloud, no tracking, no internet permission."
+    />
+    <meta name="twitter:image" content="./screens/og.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ZiG",
+        "alternateName": "Zen i Guess",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Android 8.0+",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "On-device Android notification interceptor that classifies and filters notifications locally. No cloud, no tracking, no internet permission.",
+        "license": "https://opensource.org/licenses/MIT"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
