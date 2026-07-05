@@ -113,12 +113,17 @@ export function Pipeline() {
               <li key={s.title} className="relative flex gap-5 sm:gap-6">
                 {/* Node */}
                 <div className="relative z-10 shrink-0">
+                  {/* Opaque backgrounds so the spine tucks behind the node
+                      instead of showing through it. */}
                   <motion.span
                     className="flex h-10 w-10 items-center justify-center rounded-full border sm:h-12 sm:w-12"
                     animate={{
-                      backgroundColor: on ? "oklch(0.74 0.11 160 / 0.14)" : "oklch(0.194 0.006 160)",
-                      borderColor: on ? "oklch(0.74 0.11 160 / 0.6)" : "oklch(1 0 0 / 0.08)",
+                      backgroundColor: on ? "oklch(0.225 0.035 162)" : "oklch(0.185 0.006 160)",
+                      borderColor: on ? "oklch(0.74 0.11 160 / 0.65)" : "oklch(1 0 0 / 0.08)",
                       color: on ? "oklch(0.82 0.135 158)" : "oklch(0.6 0.006 160)",
+                      boxShadow: on
+                        ? "0 0 0 5px oklch(0.74 0.11 160 / 0.06), 0 0 20px -6px oklch(0.74 0.11 160 / 0.45)"
+                        : "0 0 0 0 oklch(0 0 0 / 0)",
                     }}
                     transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                   >
