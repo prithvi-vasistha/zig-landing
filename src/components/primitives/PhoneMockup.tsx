@@ -105,12 +105,12 @@ function Device({
         style={{ boxShadow: "0 0 0 1px oklch(0 0 0 / 0.9) inset" }}
       >
         {/* Screen */}
-        <div className="relative aspect-[1080/2340] overflow-hidden rounded-[2rem] bg-[oklch(0.14_0.004_160)]">
+        <div className="relative aspect-[1080/2400] overflow-hidden rounded-[2rem] bg-[oklch(0.14_0.004_160)]">
           <Picture
             name={name}
             alt={alt}
             width={1080}
-            height={2340}
+            height={2400}
             loading={priority ? "eager" : "lazy"}
             fetchPriority={priority ? "high" : "auto"}
             className="absolute inset-0 h-full w-full object-cover object-top"

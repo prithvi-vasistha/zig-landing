@@ -26,7 +26,7 @@ const FEATURES: Feature[] = [
       "Backed by a thread-safe Rust engine",
     ],
     screen: "managed",
-    alt: "ZiG's Managed Apps screen with Gmail and Messages switched on.",
+    alt: "ZiG's Managed Apps screen with ChatGPT and Messages switched on.",
   },
   {
     id: "keyword-rules",
@@ -39,7 +39,7 @@ const FEATURES: Feature[] = [
       "OTP, PNR, boarding pass — your call",
     ],
     screen: "rules",
-    alt: "ZiG's Custom Rules Vault with OTP, PNR and Boarding Pass keywords.",
+    alt: "ZiG's Custom Rules Vault with OTP, PNR and a chained Cab + Arriving rule.",
   },
   {
     id: "on-device-ai",
