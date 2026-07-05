@@ -4,7 +4,6 @@ import { Button } from "../primitives/Button";
 import { GithubMark } from "../primitives/GithubMark";
 import { PhoneMockup } from "../primitives/PhoneMockup";
 import { EASE_ENTER } from "../../lib/motion";
-import { asset } from "../../lib/asset";
 import { SITE } from "../../lib/site";
 
 const TRUST = ["No internet permission", "100% on-device", "Open source · MIT"];
@@ -83,20 +82,6 @@ export function Hero() {
           className="relative mx-auto w-full max-w-[300px] sm:max-w-[330px] lg:max-w-[360px]"
         >
           <PhoneMockup name="classify" alt="ZiG classifying notifications on-device, showing a block probability for each." priority tilt />
-
-          {/* The real ZiG-published notification, floating out of the device */}
-          <motion.img
-            src={asset("screens/notif-card.webp")}
-            alt='A notification re-published by ZiG: "ZiG-Messages · Hi".'
-            width={900}
-            height={202}
-            loading="eager"
-            className="absolute -left-4 -top-3 w-[112%] max-w-none rounded-2xl sm:-left-10 lg:-left-16"
-            style={{ filter: "drop-shadow(0 24px 40px oklch(0 0 0 / 0.55))" }}
-            initial={{ opacity: 0, y: reduce ? 0 : -12, scale: reduce ? 1 : 0.96 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.7, ease: EASE_ENTER, delay: 0.7 }}
-          />
         </motion.div>
       </div>
     </section>
