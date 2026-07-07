@@ -15,7 +15,7 @@ const QA = [
   },
   {
     q: "How does it decide what to filter?",
-    a: "Deterministic checks run first — is the app managed, is the sender a contact, does a keyword rule match. Only when all of those miss does a small on-device model score the notification, and every verdict shows its block probability so you can see and correct it.",
+    a: "Deterministic checks run first — is the app managed, is the sender a contact, does a keyword rule match. When all of those miss, an exact-match cache replays any identical notification you've decided before; only on a miss does a small on-device model score it, and every verdict shows its block probability so you can see and correct it.",
   },
   {
     q: "Does the model send anything to a server?",
@@ -23,7 +23,7 @@ const QA = [
   },
   {
     q: "Which Android versions are supported?",
-    a: "Android 8.0 Oreo (API 26) and newer.",
+    a: "It runs on Android 8.0 Oreo (API 26) and newer, and is built and tested against Android 15 and above.",
   },
   {
     q: "Will it hurt my battery?",

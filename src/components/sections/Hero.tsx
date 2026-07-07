@@ -6,7 +6,7 @@ import { PhoneMockup } from "../primitives/PhoneMockup";
 import { EASE_ENTER } from "../../lib/motion";
 import { SITE } from "../../lib/site";
 
-const TRUST = ["No internet permission", "100% on-device", "Open source · MIT"];
+const TRUST = ["Works fully offline", "100% on-device", "Open source · MIT"];
 
 export function Hero() {
   const reduce = useReducedMotion();

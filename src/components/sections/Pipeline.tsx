@@ -6,7 +6,7 @@ import {
   useMotionValueEvent,
   useReducedMotion,
 } from "framer-motion";
-import { Bell, LayoutGrid, Contact, KeyRound, Cpu, BellRing } from "lucide-react";
+import { Bell, LayoutGrid, Contact, KeyRound, History, Cpu, BellRing } from "lucide-react";
 import { Section } from "../primitives/Section";
 import { MonoLabel } from "../primitives/Text";
 import { Reveal } from "../primitives/Reveal";
@@ -52,10 +52,18 @@ const STAGES: Stage[] = [
     cost: "microseconds",
   },
   {
+    icon: History,
+    tag: "Layer 4 · Exact-match cache",
+    title: "Have you judged this exact one before?",
+    body: "A case-insensitive, index-backed check for a notification whose newest message you've already allowed or blocked. On a hit, your past verdict replays instantly — no model runs.",
+    verdict: "seen before → your past decision",
+    cost: "sub-millisecond",
+  },
+  {
     icon: Cpu,
-    tag: "Layer 4 · On-device ML",
+    tag: "Layer 4 · On-device model",
     title: "How likely is this noise?",
-    body: "Only when every rule misses does the TFLite classifier score it, with your Personal Memory able to veto.",
+    body: "Only on a cache miss does the TFLite classifier score it, with your Personal Memory able to veto from your own history.",
     verdict: "allow → delivered · block → suppressed",
     cost: "milliseconds",
   },

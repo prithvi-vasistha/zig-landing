@@ -45,9 +45,9 @@ const FEATURES: Feature[] = [
     id: "on-device-ai",
     tag: "On-device classification",
     title: "A model that runs on your phone — and only when it must.",
-    body: "When no rule decides, a small TensorFlow Lite classifier scores how likely a notification is noise. Every verdict shows its P(block), so nothing is a black box. If the model is ever unavailable, ZiG fails open and lets the notification through — it never disappears silently.",
+    body: "When no rule decides, a small TensorFlow Lite classifier scores how likely a notification is noise. But first, an exact-match cache replays any identical notification you've judged before — for free, no inference at all. Every verdict shows its P(block), so nothing is a black box, and if the model is ever unavailable ZiG fails open rather than dropping anything.",
     bullets: [
-      "Deterministic rules always run first",
+      "Repeats replay from a deterministic cache",
       "A visible P(block) on every decision",
       "Fails open — never a silent drop",
     ],

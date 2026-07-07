@@ -64,7 +64,7 @@ export function Engineering() {
             <dl className="grid grid-cols-3 gap-px overflow-hidden rounded-[var(--radius-md)] border border-line bg-line">
               {[
                 ["Min SDK", "26"],
-                ["Internet perms", "0"],
+                ["Tested on", "Android 15+"],
                 ["License", "MIT"],
               ].map(([k, v]) => (
                 <div key={k} className="bg-bg px-4 py-4">
