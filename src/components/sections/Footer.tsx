@@ -2,6 +2,7 @@ import { Container } from "../primitives/Container";
 import { Logo } from "../primitives/Logo";
 import { GithubMark } from "../primitives/GithubMark";
 import { SITE } from "../../lib/site";
+import { asset } from "../../lib/asset";
 
 const NAV = [
   { href: "#how", label: "How it works" },
@@ -53,6 +54,12 @@ export function Footer() {
               className="text-[0.9rem] text-muted transition-colors hover:text-ink"
             >
               Download APK
+            </a>
+            <a
+              href={asset("privacy.html")}
+              className="text-[0.9rem] text-muted transition-colors hover:text-ink"
+            >
+              Privacy Policy
             </a>
             <span className="text-[0.9rem] text-muted">{SITE.license} License</span>
           </div>
