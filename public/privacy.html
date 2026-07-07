@@ -236,11 +236,14 @@
         will not run.
       </p>
 
-      <h3>Installed applications</h3>
+      <h3>Apps on your device</h3>
       <p>
-        ZiG reads the list of apps installed on your device so you can choose which of them
-        it should manage. Apps you do not explicitly enable are never inspected. This list
-        is used only to populate the in-app selection screen and is not transmitted.
+        ZiG can see only the apps that have a home-screen launcher icon (the ones you can
+        open), so you can choose which of them it manages. It uses Android’s scoped
+        app-visibility mechanism rather than a broad list of every installed package, so
+        system and background components stay invisible to it. Apps you do not explicitly
+        enable are never inspected, and this information is used only for the in-app
+        selection screen and is never transmitted.
       </p>
 
       <h2>Information the app stores</h2>
@@ -298,7 +301,9 @@
           and to deliver the optional daily summary.
         </li>
         <li>
-          <strong>Installed apps list:</strong> to let you pick which apps ZiG manages.
+          <strong>App visibility (launcher apps only):</strong> to let you pick which of
+          your openable apps ZiG manages, via Android’s scoped
+          <span class="mono">&lt;queries&gt;</span> mechanism.
         </li>
         <li>
           <strong>Internet:</strong> <em>not requested and not granted.</em> ZiG cannot
