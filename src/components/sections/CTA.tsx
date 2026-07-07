@@ -36,7 +36,7 @@ export function CTA() {
             </Button>
           </div>
           <p className="u-mono mt-6 text-[0.72rem] uppercase tracking-[0.12em] text-faint">
-            Free · MIT · Android {SITE.minAndroid}+
+            Free · MIT · Android {SITE.testedAndroid}+
           </p>
         </Reveal>
       </Container>

@@ -7,4 +7,5 @@ export const SITE = {
   license: "MIT",
   author: "Prithvi P Vasistha",
   minAndroid: "8.0",
+  testedAndroid: "15",
 } as const;

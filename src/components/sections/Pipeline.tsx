@@ -53,7 +53,7 @@ const STAGES: Stage[] = [
   },
   {
     icon: History,
-    tag: "Layer 4 · Exact-match cache",
+    tag: "Layer 4.0 · Exact-match cache",
     title: "Have you judged this exact one before?",
     body: "A case-insensitive, index-backed check for a notification whose newest message you've already allowed or blocked. On a hit, your past verdict replays instantly — no model runs.",
     verdict: "seen before → your past decision",
@@ -61,7 +61,7 @@ const STAGES: Stage[] = [
   },
   {
     icon: Cpu,
-    tag: "Layer 4 · On-device model",
+    tag: "Layer 4.1 · On-device model",
     title: "How likely is this noise?",
     body: "Only on a cache miss does the TFLite classifier score it, with your Personal Memory able to veto from your own history.",
     verdict: "allow → delivered · block → suppressed",
